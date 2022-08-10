@@ -7,30 +7,27 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./images/icon-dice.ico"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Advice generator app</title>
+    <title>Advice Generator App</title>
   </head>
 
   <body>
-    <div class="bg-[#1F2632] h-screen font-['Manrope']">
-      <div class="bg-[#313A48] flex flex-col justify-center align-center text-center w-[335px]">
-
-        <div id="advice">
-
+    <div class="bg-[#1F2632] flex justify-center items-center h-screen font-['Manrope']">
+      <div class="bg-[#313A48] text-center w-[335px] p-6 rounded-lg lg:w-[600px] lg:p-8">
+        <div>
+          <h6 id="number__advice" class="text-[#51FFA8] text-[14px] tracking-[0.4em]"></h6>
+          <p id="text__advice" class="text-[#CDE2E8] text-[28px] py-6"></p>
         </div>
-        
-        <img src="./images/pattern-divider.svg" alt="">
-        <img src="./images/icon-dice.svg" alt="Next Advice" class="text-[#51FFA8]">
-      </div>
       
-    </div>
-    
-
+        <img src="./images/pattern-divider.svg" alt="pattern-divider" class="pb-6 m-auto lg:pb-12">
+        <button id="refresh" class="bg-[#51FFA8] w-[65px] h-[65px] rounded-[100px] flex justify-center items-center absolute left-[0] right-[0] m-auto hover:shadow-[0px_0px_15px_#51FFA8] active:translate-y-[5px]"><img src="./images/icon-dice.svg" alt="Next Advice" class=""></button>
+        
+      </div>
     </div>
 
     <script src="./js/main.js"></script>
