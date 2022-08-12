@@ -8,7 +8,7 @@ const btn = document.getElementById("refresh");
 btn.addEventListener('click', btnRefresh)
 
 async function fetchData(urlApi) {
-    const response = await fetch(urlApi);
+    const response = await fetch(urlApi,  { cache: 'no-cache' });
     const data = await response.json();
 
     adviceNumber.innerHTML = `ADVICE #${data.slip.id}`;
